@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adolescencia Judía</title>
+  <title>Adolescencia Judía | Hub Visual</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -38,7 +38,7 @@
         <a class="btn" href="#como-funciona">Empezar</a>
       </div>
 
-      <!-- Ilustración sin imágenes externas (SVG) -->
+      <!-- Ilustración sin imágenes externas -->
       <div class="hero__art" aria-hidden="true">
         <svg viewBox="0 0 320 240" class="art">
           <defs>
@@ -48,7 +48,6 @@
             </linearGradient>
           </defs>
           <rect x="0" y="0" width="320" height="240" rx="20" fill="url(#g1)"/>
-          <!-- estrella de David abstracta -->
           <g fill="rgba(255,255,255,.9)">
             <polygon points="160,35 190,85 130,85"/>
             <polygon points="160,205 190,155 130,155"/>
@@ -68,7 +67,6 @@
       </div>
     </div>
 
-    <!-- curva decorativa -->
     <div class="curve curve--bottom" aria-hidden="true"></div>
   </section>
 
@@ -85,25 +83,22 @@
           <div class="icon">🕯️</div>
           <h3>Tradición</h3>
           <p>Shabat, Bar/Bat Mitzvá y festividades. La familia y la comunidad transmiten pertenencia.</p>
-          <a class="link" href="#galeria">Ver más</a>
         </article>
         <article class="card">
           <div class="icon">📱</div>
           <h3>Vida moderna</h3>
           <p>Escuela, deportes, redes sociales y proyectos creativos en diálogo con sus raíces.</p>
-          <a class="link" href="#galeria">Ver más</a>
         </article>
         <article class="card">
           <div class="icon">⚖️</div>
           <h3>Retos</h3>
           <p>Equilibrar estudios, desconexión digital en Shabat y enfrentar prejuicios en internet.</p>
-          <a class="link" href="#faq">Preguntas</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- BLOQUE ONDULADO + GALERÍA DE CARDS -->
+  <!-- GALERÍA -->
   <section id="galeria" class="section section--wave">
     <div class="wave wave--top" aria-hidden="true"></div>
     <div class="container">
@@ -113,77 +108,24 @@
       </p>
 
       <div class="grid quarters">
-        <article class="profile">
-          <div class="profile__thumb thumb--a"></div>
-          <div class="profile__body">
-            <h4>Kosher</h4>
-            <p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p>
-            <ul class="tags"><li>Alimentación</li><li>Familia</li></ul>
-          </div>
-        </article>
-
-        <article class="profile">
-          <div class="profile__thumb thumb--b"></div>
-          <div class="profile__body">
-            <h4>Shabat</h4>
-            <p>De viernes a sábado: velas, cena, descanso y <em>Havdalá</em> para cerrar.</p>
-            <ul class="tags"><li>Rito semanal</li><li>Desconexión</li></ul>
-          </div>
-        </article>
-
-        <article class="profile">
-          <div class="profile__thumb thumb--c"></div>
-          <div class="profile__body">
-            <h4>Bar/Bat Mitzvá</h4>
-            <p>Rito de paso que hoy combina ceremonia y fiesta moderna con amigos y música.</p>
-            <ul class="tags"><li>Transición</li><li>Comunidad</li></ul>
-          </div>
-        </article>
-
-        <article class="profile">
-          <div class="profile__thumb thumb--d"></div>
-          <div class="profile__body">
-            <h4>Mundo digital</h4>
-            <p>TikTok, deportes y estudios globales, sin perder de vista su herencia cultural.</p>
-            <ul class="tags"><li>Juventud</li><li>Global</li></ul>
-          </div>
-        </article>
+        <article class="profile"><div class="profile__thumb thumb--a"></div><div class="profile__body"><h4>Kosher</h4><p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p></div></article>
+        <article class="profile"><div class="profile__thumb thumb--b"></div><div class="profile__body"><h4>Shabat</h4><p>De viernes a sábado: velas, cena, descanso y <em>Havdalá</em> para cerrar.</p></div></article>
+        <article class="profile"><div class="profile__thumb thumb--c"></div><div class="profile__body"><h4>Bar/Bat Mitzvá</h4><p>Rito de paso que hoy combina ceremonia y fiesta moderna con amigos y música.</p></div></article>
+        <article class="profile"><div class="profile__thumb thumb--d"></div><div class="profile__body"><h4>Mundo digital</h4><p>TikTok, deportes y estudios globales, sin perder de vista su herencia cultural.</p></div></article>
       </div>
-
-      <!-- Audio de la sección “Películas” -->
-      <div class="audio card">
-        <h3>🎧 Audio: “No estás invitada a mi Bat Mitzvá” – Resumen (10 min)</h3>
-        <audio controls src="media/no_estas_invitada_bat_mitzva_resumen_10min.mp3"></audio>
-        <p class="hint">Coloca el archivo MP3 en <code>/media/</code> con ese nombre.</p>
-      </div>
-
-      <p class="seeall"><a href="#faq">Ver más preguntas frecuentes</a></p>
     </div>
     <div class="wave wave--bottom" aria-hidden="true"></div>
   </section>
 
-  <!-- FAQ (sin JS) -->
+  <!-- FAQ -->
   <section id="faq" class="section">
     <div class="container">
       <h2 class="title">Preguntas frecuentes</h2>
-
       <div class="faq">
-        <details>
-          <summary>¿Qué incluye el Shabat en una familia adolescente?</summary>
-          <p>Encendido de velas, cena con <em>jalá</em>, bendiciones, descanso de tareas/tecnología (según observancia), sinagoga y cierre con <em>Havdalá</em>.</p>
-        </details>
-        <details>
-          <summary>¿Cómo se vive kosher en la adolescencia?</summary>
-          <p>Se respetan carnes y pescados permitidos, se evitan cerdo y mariscos, y no se mezcla carne con leche; muchos lo cumplen estrictamente en casa.</p>
-        </details>
-        <details>
-          <summary>¿Qué pasa en Bar/Bat Mitzvá hoy?</summary>
-          <p>Preparación y ceremonia en comunidad + celebración moderna (DJ, fotos, amigos) como rito de transición y pertenencia.</p>
-        </details>
-        <details>
-          <summary>¿Hay comparación con Colombia?</summary>
-          <p>Brevemente: en Colombia, <b>quinceaños</b> y <b>grados</b> marcan transiciones sociales/ académicas; en la cultura judía, el foco es religioso-comunitario.</p>
-        </details>
+        <details><summary>¿Qué incluye el Shabat en una familia adolescente?</summary><p>Encendido de velas, cena, descanso de tareas/tecnología, sinagoga y cierre con <em>Havdalá</em>.</p></details>
+        <details><summary>¿Cómo se vive kosher en la adolescencia?</summary><p>Se respetan carnes y pescados permitidos; no se mezcla carne con leche; muchos lo cumplen estrictamente en casa.</p></details>
+        <details><summary>¿Qué pasa en Bar/Bat Mitzvá hoy?</summary><p>Ceremonia + celebración moderna (DJ, fotos, amigos) como rito de transición y pertenencia.</p></details>
+        <details><summary>¿Hay comparación con Colombia?</summary><p>En Colombia, <b>quinceaños</b> y <b>grados</b> marcan transiciones sociales; en la cultura judía, el foco es religioso-comunitario.</p></details>
       </div>
     </div>
   </section>
@@ -193,20 +135,13 @@
     <div class="container">
       <div class="cta__box">
         <h2>¿Listos para exponer?</h2>
-        <p>Si quieres, deja aquí notas del grupo para ultimar detalles.</p>
         <form class="form" onsubmit="return false;">
           <div class="row">
-            <label>Nombre
-              <input type="text" placeholder="Danna" />
-            </label>
-            <label>Correo
-              <input type="email" placeholder="tu@correo.com" />
-            </label>
+            <label>Nombre<input type="text" placeholder="Danna" /></label>
+            <label>Correo<input type="email" placeholder="tu@correo.com" /></label>
           </div>
-          <label>Mensaje
-            <textarea rows="4" placeholder="Puntos claves para la clase…"></textarea>
-          </label>
-          <button class="btn btn--full" type="button">Guardar nota</button>
+          <label>Mensaje<textarea rows="4" placeholder="Notas del grupo…"></textarea></label>
+          <button class="btn btn--full" type="button">Guardar</button>
         </form>
       </div>
     </div>
