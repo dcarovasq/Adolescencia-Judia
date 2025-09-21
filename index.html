@@ -18,7 +18,7 @@
       <nav class="menu" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
-        <a href="#galeria">Identidad & Vida</a>
+        <a href="#identidad">Identidad & Vida</a>
         <a href="#faq">Preguntas</a>
       </nav>
     </div>
@@ -26,30 +26,21 @@
 
   <!-- HERO -->
   <section id="inicio" class="hero">
-    <div class="container hero__grid">
-      <div class="hero__copy">
-        <h1>Adolescencia Judía <span class="accent">Hoy</span></h1>
-        <p class="lead">
-          Un recorrido visual por la vida de los adolescentes judíos en la actualidad:
-          <b>tradición</b> + <b>modernidad</b>, ritos de paso, <em>Shabat</em>, alimentación kosher,
-          redes sociales y retos del mundo global.
-        </p>
-        <a class="btn" href="#como-funciona">Empezar</a>
-      </div>
-
-      <!-- Tarjeta con ✡︎ (sin SVG) -->
-      <div class="hero__card" aria-hidden="true">
-        <span class="star">✡︎</span>
-      </div>
+    <div class="container hero__inner">
+      <h1>Adolescencia Judía <span class="accent">Hoy</span></h1>
+      <p class="lead">
+        Un recorrido visual por la vida de los adolescentes judíos en la actualidad:
+        <b>tradición</b> + <b>modernidad</b>, ritos de paso, <em>Shabat</em>, alimentación kosher,
+        redes sociales y retos del mundo global.
+      </p>
+      <a class="btn" href="#como-funciona">Empezar</a>
     </div>
-  </section>
 
-  <!-- BANNER AZUL SOLO FRASE (CENTRADO) -->
-  <section class="phraseband" aria-label="Frase hebrea">
-    <div class="container">
-      <div class="phrase">
-        <div class="heb" lang="he">תיקון עולם</div>
-        <div class="trans">Tikkun Olam — “reparar el mundo”</div>
+    <!-- RIBBON DE FRASE (superpuesto) -->
+    <div class="ribbon" aria-label="Frase hebrea">
+      <div class="ribbon__inner">
+        <span class="heb" lang="he">תיקון עולם</span>
+        <span class="trans">Tikkun Olam — “reparar el mundo”</span>
       </div>
     </div>
   </section>
@@ -58,9 +49,8 @@
   <section id="como-funciona" class="section">
     <div class="container">
       <h2 class="title">Cómo funciona la vida juvenil</h2>
-      <p class="section__intro">
-        La experiencia adolescente se entiende mejor en tres ejes que se combinan en el día a día.
-      </p>
+      <p class="section__intro">Tres ejes que conviven en el día a día.</p>
+
       <div class="grid thirds">
         <article class="card">
           <div class="icon">🕯️</div>
@@ -82,23 +72,50 @@
   </section>
 
   <!-- IDENTIDAD & VIDA -->
-  <section id="galeria" class="section section--wave">
+  <section id="identidad" class="section section--wave">
     <div class="wave wave--top" aria-hidden="true"></div>
     <div class="container">
       <h2 class="title">Identidad & Vida Cotidiana</h2>
-      <p class="section__intro">Prácticas y símbolos que conviven con gustos y hábitos actuales.</p>
+      <p class="section__intro">Prácticas y símbolos junto a gustos y hábitos actuales.</p>
 
       <div class="grid quarters">
-        <article class="profile"><div class="profile__thumb thumb--a"></div><div class="profile__body"><h4>Kosher</h4><p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p></div></article>
-        <article class="profile"><div class="profile__thumb thumb--b"></div><div class="profile__body"><h4>Shabat</h4><p>Velas, cena familiar, descanso y <em>Havdalá</em> para cerrar.</p></div></article>
-        <article class="profile"><div class="profile__thumb thumb--c"></div><div class="profile__body"><h4>Bar/Bat Mitzvá</h4><p>Ceremonia + fiesta moderna con amigos y música.</p></div></article>
-        <article class="profile"><div class="profile__thumb thumb--d"></div><div class="profile__body"><h4>Mundo digital</h4><p>TikTok, deportes y estudios globales, sin perder su herencia.</p></div></article>
+        <article class="profile">
+          <div class="profile__thumb thumb--a"></div>
+          <div class="profile__body">
+            <h4>Kosher</h4>
+            <p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="profile__thumb thumb--b"></div>
+          <div class="profile__body">
+            <h4>Shabat</h4>
+            <p>Velas, cena familiar, descanso y <em>Havdalá</em> para cerrar.</p>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="profile__thumb thumb--c"></div>
+          <div class="profile__body">
+            <h4>Bar/Bat Mitzvá</h4>
+            <p>Ceremonia + fiesta moderna con amigos y música.</p>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="profile__thumb thumb--d"></div>
+          <div class="profile__body">
+            <h4>Mundo digital</h4>
+            <p>TikTok, deportes y estudios globales sin perder su herencia.</p>
+          </div>
+        </article>
       </div>
     </div>
     <div class="wave wave--bottom" aria-hidden="true"></div>
   </section>
 
-  <!-- PREGUNTAS FRECUENTES (ACCESIBLE) -->
+  <!-- FAQ ACCESIBLE -->
   <section id="faq" class="section" aria-labelledby="t-faq">
     <div class="container">
       <h2 id="t-faq" class="title">Preguntas frecuentes</h2>
@@ -108,9 +125,9 @@
         <details role="listitem">
           <summary><span>¿Qué incluye el Shabat en una familia adolescente?</span></summary>
           <ul>
-            <li><b>Inicio (viernes tarde):</b> encendido de velas y bendiciones.</li>
+            <li><b>Inicio (viernes tarde):</b> velas y bendiciones.</li>
             <li><b>Cena:</b> jalá, vino/jugo de uva y platos preparados con anticipación.</li>
-            <li><b>Sábado:</b> descanso de tareas/tecnología (según observancia), sinagoga y tiempo en familia.</li>
+            <li><b>Sábado:</b> descanso de tareas/tecnología (según observancia), sinagoga y familia.</li>
             <li><b>Cierre:</b> <em>Havdalá</em> con copa, especias y vela trenzada.</li>
           </ul>
         </details>
@@ -118,10 +135,10 @@
         <details role="listitem">
           <summary><span>¿Cómo se vive kosher en la adolescencia?</span></summary>
           <ul>
-            <li>Carnes permitidas y aves como pollo/pavo; prohibidos cerdo y mariscos.</li>
+            <li>Carnes permitidas y aves (pollo/pavo); prohibidos cerdo y mariscos.</li>
             <li>Pescado con aletas y escamas.</li>
             <li>No mezclar carne con leche (incluye utensilios separados).</li>
-            <li>En salidas con amigos, se busca opciones aptas o vegetarianas.</li>
+            <li>En salidas con amigos se buscan opciones aptas o vegetarianas.</li>
           </ul>
         </details>
 
@@ -130,14 +147,14 @@
           <ul>
             <li><b>Preparación:</b> meses de estudio/lectura en hebreo.</li>
             <li><b>Ceremonia:</b> lectura o discurso ante la comunidad.</li>
-            <li><b>Celebración:</b> evento moderno con DJ, fotos y participación de amistades.</li>
+            <li><b>Celebración:</b> evento moderno con DJ, fotos y amistades.</li>
           </ul>
         </details>
 
         <details role="listitem">
           <summary><span>¿Cómo equilibran tradición y vida moderna?</span></summary>
           <ul>
-            <li>“<b>Shabat digital</b>”: acuerdos para pausar redes y pantallas.</li>
+            <li>“<b>Shabat digital</b>”: pausas de redes y pantallas.</li>
             <li>Campamentos y clubes juveniles fortalecen pertenencia.</li>
             <li>Alta valoración de la educación y programas internacionales.</li>
           </ul>
@@ -152,7 +169,7 @@
       <nav class="foot-menu" aria-label="Enlaces de pie de página">
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
-        <a href="#galeria">Identidad</a>
+        <a href="#identidad">Identidad</a>
         <a href="#faq">Preguntas</a>
       </nav>
       <small>© 2025 Exposición · Psicología de la Adolescencia</small>
