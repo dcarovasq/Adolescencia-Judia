@@ -19,7 +19,7 @@
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#galeria">Identidad & Vida</a>
-        <a href="#contacto" class="btn btn--sm">Contacto</a>
+        <a href="#faq">Preguntas</a>
       </nav>
     </div>
   </header>
@@ -37,50 +37,22 @@
         <a class="btn" href="#como-funciona">Empezar</a>
       </div>
 
-      <!-- Ilustración con Estrella de David mejorada -->
-      <div class="hero__art" aria-hidden="true">
-        <svg viewBox="0 0 360 260" class="art" role="img" aria-label="Estrella de David">
-          <defs>
-            <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#0A66C2"/>
-              <stop offset="100%" stop-color="#004080"/>
-            </linearGradient>
-            <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#002a66" flood-opacity="0.35"/>
-            </filter>
-          </defs>
-          <rect x="0" y="0" width="360" height="260" rx="26" fill="url(#bgGrad)" filter="url(#soft)"/>
-          <!-- estrella limpia y centrada -->
-          <g fill="#ffffff" opacity="0.95">
-            <!-- triángulo hacia arriba -->
-            <polygon points="180,40 230,125 130,125"/>
-            <!-- triángulo hacia abajo -->
-            <polygon points="180,220 230,135 130,135"/>
-          </g>
-          <!-- triángulos interiores para líneas de la estrella -->
-          <g fill="#ffffff" opacity="0.75">
-            <polygon points="180,72 205,115 155,115"/>
-            <polygon points="180,188 205,145 155,145"/>
-          </g>
-        </svg>
+      <!-- Tarjeta con ✡︎ (sin SVG) -->
+      <div class="hero__card" aria-hidden="true">
+        <span class="star">✡︎</span>
       </div>
     </div>
-
-    <!-- Tira de métricas / frase -->
-    <div class="stats">
-      <div class="container stats__grid">
-        <div class="stat"><span>115+</span> Comunidades juveniles</div>
-        <div class="stat"><span>58+</span> Programas educativos</div>
-        <!-- Frase judía + traducción -->
-        <div class="stat phrase">
-          <span class="heb">תיקון עולם</span>
-          <small class="trans">Tikkun Olam — “reparar el mundo”</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="curve curve--bottom" aria-hidden="true"></div>
   </section>
+
+  <!-- BANNER AZUL SOLO FRASE -->
+  <div class="stats">
+    <div class="container stats__solo">
+      <div class="phrase">
+        <span class="heb">תיקון עולם</span>
+        <small class="trans">Tikkun Olam — “reparar el mundo”</small>
+      </div>
+    </div>
+  </div>
 
   <!-- CÓMO FUNCIONA -->
   <section id="como-funciona" class="section">
@@ -89,7 +61,6 @@
       <p class="section__intro">
         La experiencia adolescente se entiende mejor en tres ejes que se combinan en el día a día.
       </p>
-
       <div class="grid thirds">
         <article class="card">
           <div class="icon">🕯️</div>
@@ -110,38 +81,68 @@
     </div>
   </section>
 
-  <!-- GALERÍA -->
+  <!-- IDENTIDAD & VIDA -->
   <section id="galeria" class="section section--wave">
     <div class="wave wave--top" aria-hidden="true"></div>
     <div class="container">
       <h2 class="title">Identidad & Vida Cotidiana</h2>
       <p class="section__intro">
-        Un vistazo a prácticas y símbolos que conviven con gustos y hábitos actuales.
+        Prácticas y símbolos que conviven con gustos y hábitos actuales.
       </p>
 
       <div class="grid quarters">
         <article class="profile"><div class="profile__thumb thumb--a"></div><div class="profile__body"><h4>Kosher</h4><p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p></div></article>
-        <article class="profile"><div class="profile__thumb thumb--b"></div><div class="profile__body"><h4>Shabat</h4><p>De viernes a sábado: velas, cena, descanso y <em>Havdalá</em> para cerrar.</p></div></article>
-        <article class="profile"><div class="profile__thumb thumb--c"></div><div class="profile__body"><h4>Bar/Bat Mitzvá</h4><p>Rito de paso que hoy combina ceremonia y fiesta moderna con amigos y música.</p></div></article>
-        <article class="profile"><div class="profile__thumb thumb--d"></div><div class="profile__body"><h4>Mundo digital</h4><p>TikTok, deportes y estudios globales, sin perder de vista su herencia cultural.</p></div></article>
+        <article class="profile"><div class="profile__thumb thumb--b"></div><div class="profile__body"><h4>Shabat</h4><p>Velas, cena familiar, descanso y <em>Havdalá</em> para cerrar.</p></div></article>
+        <article class="profile"><div class="profile__thumb thumb--c"></div><div class="profile__body"><h4>Bar/Bat Mitzvá</h4><p>Ceremonia + fiesta moderna con amigos y música.</p></div></article>
+        <article class="profile"><div class="profile__thumb thumb--d"></div><div class="profile__body"><h4>Mundo digital</h4><p>TikTok, deportes y estudios globales, sin perder su herencia.</p></div></article>
       </div>
     </div>
     <div class="wave wave--bottom" aria-hidden="true"></div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="cta">
+  <!-- FAQ AMPLIADO -->
+  <section id="faq" class="section">
     <div class="container">
-      <div class="cta__box">
-        <h2>¿Listos para exponer?</h2>
-        <form class="form" onsubmit="return false;">
-          <div class="row">
-            <label>Nombre<input type="text" placeholder="Danna" /></label>
-            <label>Correo<input type="email" placeholder="tu@correo.com" /></label>
-          </div>
-          <label>Mensaje<textarea rows="4" placeholder="Notas del grupo…"></textarea></label>
-          <button class="btn btn--full" type="button">Guardar</button>
-        </form>
+      <h2 class="title">Preguntas frecuentes</h2>
+      <div class="faq">
+        <details open>
+          <summary>¿Qué incluye el Shabat en una familia adolescente?</summary>
+          <ul>
+            <li><b>Inicio (viernes tarde):</b> encendido de velas y bendiciones.</li>
+            <li><b>Cena:</b> jalá, vino/jugo de uva y platos preparados con anticipación.</li>
+            <li><b>Sábado:</b> descanso de tareas/tecnología (según observancia), sinagoga y tiempo en familia.</li>
+            <li><b>Cierre:</b> <em>Havdalá</em> con copa, especias y vela trenzada.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>¿Cómo se vive kosher en la adolescencia?</summary>
+          <ul>
+            <li>Carnes permitidas (rumiantes con pezuña hendida) y aves como pollo/pavo.</li>
+            <li>Pescado con aletas y escamas; prohibidos cerdo y mariscos.</li>
+            <li>No mezclar carne con leche (incluye utensilios separados).</li>
+            <li>Muchos jóvenes lo cumplen estrictamente en casa y se adaptan en salidas con amigos.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>¿Qué pasa hoy en Bar Mitzvá / Bat Mitzvá?</summary>
+          <ul>
+            <li><b>Preparación:</b> meses de estudio/lectura en hebreo.</li>
+            <li><b>Ceremonia:</b> lectura o discurso ante la comunidad.</li>
+            <li><b>Celebración:</b> evento moderno con DJ, fotos y participación de amistades.</li>
+            <li><b>Sentido:</b> transición simbólica a nuevas responsabilidades comunitarias.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>¿Cómo equilibran tradición y vida moderna?</summary>
+          <ul>
+            <li>Acuerdos familiares para “<b>Shabat digital</b>” (pausa de redes).</li>
+            <li>Espacios juveniles: campamentos, clubes y actividades deportivas/culturales.</li>
+            <li>Educación valorada: proyectos académicos y programas internacionales.</li>
+          </ul>
+        </details>
       </div>
     </div>
   </section>
@@ -153,6 +154,7 @@
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#galeria">Identidad</a>
+        <a href="#faq">Preguntas</a>
       </nav>
       <small>© 2025 Exposición · Psicología de la Adolescencia</small>
     </div>
