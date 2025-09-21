@@ -3,54 +3,227 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hub | Adolescencia Judía</title>
+  <title>Adolescencia Judía</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__inner">
-      <h1>Adolescencia Judía</h1>
-      <p class="hero__sub">Equilibrio entre tradición y modernidad: ritos de paso, Shabat, alimentación kosher, retos actuales y referencias audiovisuales.</p>
-      <a class="btn btn--ghost" href="#hub">Explorar el Hub</a>
+
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">✡︎</span>
+        <span class="brand__text">J-Teens</span>
+      </div>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#galeria">Identidad & Vida</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="btn btn--sm">Contacto</a>
+      </nav>
     </div>
   </header>
 
-  <nav class="nav">
-    <a class="nav__link" href="#hub">Inicio</a>
-    <a class="nav__link" href="#adolescencia">Adolescencia</a>
-    <a class="nav__link" href="#ritos">Ritos</a>
-    <a class="nav__link" href="#shabat">Shabat & Kosher</a>
-    <a class="nav__link" href="#retos">Retos</a>
-    <a class="nav__link" href="#peliculas">Películas</a>
-    <a class="nav__link" href="#colombia">Comparación</a>
-  </nav>
-
-  <main class="wrap">
-    <section id="hub" class="hub grid">
-      <article class="card reveal"><h3>Adolescencia actual</h3><p>Identidad, familia y vida cotidiana hoy.</p><a class="btn" href="#adolescencia">Abrir</a></article>
-      <article class="card reveal"><h3>Ritos de paso</h3><p>Bar Mitzvá (13) y Bat Mitzvá (12).</p><a class="btn" href="#ritos">Abrir</a></article>
-      <article class="card reveal"><h3>Shabat & Kosher</h3><p>Paso a paso y claves de la dieta.</p><a class="btn" href="#shabat">Abrir</a></article>
-      <article class="card reveal"><h3>Retos actuales</h3><p>Identidad, redes y escuela.</p><a class="btn" href="#retos">Abrir</a></article>
-      <article class="card reveal"><h3>Películas/Series</h3><p>Representaciones recientes.</p><a class="btn" href="#peliculas">Abrir</a></article>
-      <article class="card reveal"><h3>Comparación (Colombia)</h3><p>Comentario final breve.</p><a class="btn" href="#colombia">Abrir</a></article>
-    </section>
-
-    <section id="peliculas" class="section reveal">
-      <h2>Películas y series</h2>
-      <ul>
-        <li><i>No estás invitado a mi Bat Mitzvá</i> (Netflix, 2023).</li>
-        <li><i>Shtisel</i> (serie israelí).</li>
-        <li><i>Unorthodox</i> (Netflix).</li>
-      </ul>
-      <div class="audio-block">
-        <h3>🎧 Audio resumen en 10 minutos</h3>
-        <audio controls src="media/no_estas_invitada_bat_mitzva_resumen_10min.mp3"></audio>
+  <!-- HERO / BANNER -->
+  <section id="inicio" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1>Adolescencia Judía <span class="accent">Hoy</span></h1>
+        <p class="lead">
+          Un recorrido visual por la vida de los adolescentes judíos en la actualidad:
+          <b>tradición</b> + <b>modernidad</b>, ritos de paso, <em>Shabat</em>, alimentación kosher,
+          redes sociales y retos del mundo global.
+        </p>
+        <a class="btn" href="#como-funciona">Empezar</a>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">Exposición – Psicología de la Adolescencia · © 2025</footer>
+      <!-- Ilustración sin imágenes externas (SVG) -->
+      <div class="hero__art" aria-hidden="true">
+        <svg viewBox="0 0 320 240" class="art">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#0A66C2"/>
+              <stop offset="100%" stop-color="#004080"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="320" height="240" rx="20" fill="url(#g1)"/>
+          <!-- estrella de David abstracta -->
+          <g fill="rgba(255,255,255,.9)">
+            <polygon points="160,35 190,85 130,85"/>
+            <polygon points="160,205 190,155 130,155"/>
+            <polygon points="115,60 205,60 160,140"/>
+            <polygon points="115,180 205,180 160,100"/>
+          </g>
+        </svg>
+      </div>
+    </div>
 
-  <script src="app.js"></script>
+    <!-- Tira de métricas -->
+    <div class="stats">
+      <div class="container stats__grid">
+        <div class="stat"><span>115+</span> Comunidades juveniles</div>
+        <div class="stat"><span>58+</span> Programas educativos</div>
+        <div class="stat"><span>173+</span> Eventos al año</div>
+      </div>
+    </div>
+
+    <!-- curva decorativa -->
+    <div class="curve curve--bottom" aria-hidden="true"></div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <h2 class="title">Cómo funciona la vida juvenil</h2>
+      <p class="section__intro">
+        La experiencia adolescente se entiende mejor en tres ejes que se combinan en el día a día.
+      </p>
+
+      <div class="grid thirds">
+        <article class="card">
+          <div class="icon">🕯️</div>
+          <h3>Tradición</h3>
+          <p>Shabat, Bar/Bat Mitzvá y festividades. La familia y la comunidad transmiten pertenencia.</p>
+          <a class="link" href="#galeria">Ver más</a>
+        </article>
+        <article class="card">
+          <div class="icon">📱</div>
+          <h3>Vida moderna</h3>
+          <p>Escuela, deportes, redes sociales y proyectos creativos en diálogo con sus raíces.</p>
+          <a class="link" href="#galeria">Ver más</a>
+        </article>
+        <article class="card">
+          <div class="icon">⚖️</div>
+          <h3>Retos</h3>
+          <p>Equilibrar estudios, desconexión digital en Shabat y enfrentar prejuicios en internet.</p>
+          <a class="link" href="#faq">Preguntas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOQUE ONDULADO + GALERÍA DE CARDS -->
+  <section id="galeria" class="section section--wave">
+    <div class="wave wave--top" aria-hidden="true"></div>
+    <div class="container">
+      <h2 class="title">Identidad & Vida Cotidiana</h2>
+      <p class="section__intro">
+        Un vistazo a prácticas y símbolos que conviven con gustos y hábitos actuales.
+      </p>
+
+      <div class="grid quarters">
+        <article class="profile">
+          <div class="profile__thumb thumb--a"></div>
+          <div class="profile__body">
+            <h4>Kosher</h4>
+            <p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p>
+            <ul class="tags"><li>Alimentación</li><li>Familia</li></ul>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="profile__thumb thumb--b"></div>
+          <div class="profile__body">
+            <h4>Shabat</h4>
+            <p>De viernes a sábado: velas, cena, descanso y <em>Havdalá</em> para cerrar.</p>
+            <ul class="tags"><li>Rito semanal</li><li>Desconexión</li></ul>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="profile__thumb thumb--c"></div>
+          <div class="profile__body">
+            <h4>Bar/Bat Mitzvá</h4>
+            <p>Rito de paso que hoy combina ceremonia y fiesta moderna con amigos y música.</p>
+            <ul class="tags"><li>Transición</li><li>Comunidad</li></ul>
+          </div>
+        </article>
+
+        <article class="profile">
+          <div class="profile__thumb thumb--d"></div>
+          <div class="profile__body">
+            <h4>Mundo digital</h4>
+            <p>TikTok, deportes y estudios globales, sin perder de vista su herencia cultural.</p>
+            <ul class="tags"><li>Juventud</li><li>Global</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- Audio de la sección “Películas” -->
+      <div class="audio card">
+        <h3>🎧 Audio: “No estás invitada a mi Bat Mitzvá” – Resumen (10 min)</h3>
+        <audio controls src="media/no_estas_invitada_bat_mitzva_resumen_10min.mp3"></audio>
+        <p class="hint">Coloca el archivo MP3 en <code>/media/</code> con ese nombre.</p>
+      </div>
+
+      <p class="seeall"><a href="#faq">Ver más preguntas frecuentes</a></p>
+    </div>
+    <div class="wave wave--bottom" aria-hidden="true"></div>
+  </section>
+
+  <!-- FAQ (sin JS) -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="title">Preguntas frecuentes</h2>
+
+      <div class="faq">
+        <details>
+          <summary>¿Qué incluye el Shabat en una familia adolescente?</summary>
+          <p>Encendido de velas, cena con <em>jalá</em>, bendiciones, descanso de tareas/tecnología (según observancia), sinagoga y cierre con <em>Havdalá</em>.</p>
+        </details>
+        <details>
+          <summary>¿Cómo se vive kosher en la adolescencia?</summary>
+          <p>Se respetan carnes y pescados permitidos, se evitan cerdo y mariscos, y no se mezcla carne con leche; muchos lo cumplen estrictamente en casa.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa en Bar/Bat Mitzvá hoy?</summary>
+          <p>Preparación y ceremonia en comunidad + celebración moderna (DJ, fotos, amigos) como rito de transición y pertenencia.</p>
+        </details>
+        <details>
+          <summary>¿Hay comparación con Colombia?</summary>
+          <p>Brevemente: en Colombia, <b>quinceaños</b> y <b>grados</b> marcan transiciones sociales/ académicas; en la cultura judía, el foco es religioso-comunitario.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="cta">
+    <div class="container">
+      <div class="cta__box">
+        <h2>¿Listos para exponer?</h2>
+        <p>Si quieres, deja aquí notas del grupo para ultimar detalles.</p>
+        <form class="form" onsubmit="return false;">
+          <div class="row">
+            <label>Nombre
+              <input type="text" placeholder="Danna" />
+            </label>
+            <label>Correo
+              <input type="email" placeholder="tu@correo.com" />
+            </label>
+          </div>
+          <label>Mensaje
+            <textarea rows="4" placeholder="Puntos claves para la clase…"></textarea>
+          </label>
+          <button class="btn btn--full" type="button">Guardar nota</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="foot-brand">✡︎ J-Teens</div>
+      <nav class="foot-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#galeria">Identidad</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <small>© 2025 Exposición · Psicología de la Adolescencia</small>
+    </div>
+  </footer>
+
 </body>
 </html>
