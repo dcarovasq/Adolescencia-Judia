@@ -1,8 +1,7 @@
-/* ===== Variables & base ===== */
+/* ===== Variables y base ===== */
 :root{
   --azul:#004080;
   --azul2:#0A66C2;
-  --azulClaro:#89b7ff;
   --azul3:#e6f0ff;
   --blanco:#ffffff;
   --crema:#fbfcff;
@@ -27,41 +26,20 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sa
 .btn{display:inline-block;background:var(--azul2);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:800;box-shadow:var(--shadow);transition:.2s}
 .btn:hover{transform:translateY(-2px)}
 
-/* ===== Hero centrado ===== */
-.hero{position:relative;padding:70px 0 100px;background:linear-gradient(180deg,var(--blanco) 0%,#f3f7ff 100%)}
-.hero__inner{max-width:820px;margin:0 auto;text-align:center}
-.hero h1{font-size:clamp(36px,5.2vw,58px);margin:0 0 12px;color:var(--azul);line-height:1.15}
+/* ===== Hero ===== */
+.hero{padding:72px 0;background:linear-gradient(180deg,var(--blanco) 0%,#f3f7ff 100%)}
+.hero__grid{display:grid;grid-template-columns:minmax(280px,1.2fr) minmax(260px,.8fr);gap:28px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,56px);margin:0 0 12px;color:var(--azul);line-height:1.15}
 .accent{color:var(--azul2)}
-.lead{font-size:clamp(16px,2.3vw,18.5px);opacity:.95;margin-bottom:24px}
+.lead{font-size:clamp(16px,2.3vw,18.5px);opacity:.95;margin-bottom:22px}
+.hero__card{display:grid;place-items:center;height:min(32vw,280px);border-radius:28px;background:linear-gradient(135deg,var(--azul2),var(--azul));color:#fff;box-shadow:var(--shadow)}
+.star{font-size:clamp(72px,9vw,128px);line-height:1}
 
-/* ===== Ribbon/franja bajo el hero (superpuesta) ===== */
-.ribbon{
-  position:absolute; left:0; right:0; bottom:-28px;
-  display:flex; justify-content:center;
-}
-.ribbon__inner{
-  position:relative;
-  background:linear-gradient(180deg,#5d98e9 0%, #2f74d1 100%);
-  color:#fff;
-  padding:18px 34px;
-  border-radius:12px;
-  font-weight:900;
-  text-align:center;
-  box-shadow:0 16px 26px rgba(0,0,0,.12);
-}
-/* extremos curvos tipo “cinta” */
-.ribbon__inner::before,
-.ribbon__inner::after{
-  content:""; position:absolute; top:50%; transform:translateY(-50%);
-  width:80px; height:36px; background:inherit; z-index:-1;
-  filter:drop-shadow(0 10px 12px rgba(0,0,0,.08));
-}
-.ribbon__inner::before{ left:-60px; clip-path:polygon(0 0,100% 20%,100% 80%,0 100%); border-radius:10px 0 0 10px }
-.ribbon__inner::after{ right:-60px; clip-path:polygon(0 20%,100% 0,100% 100%,0 80%); border-radius:0 10px 10px 0 }
-
-.phrase{display:flex;flex-direction:column;align-items:center;gap:4px}
-.heb{font-size:clamp(22px,4vw,32px); letter-spacing:.6px; color:#fff}
-.trans{font-size:clamp(12px,1.8vw,14px); opacity:.98}
+/* ===== Banner con frase (centrado & proporcional) ===== */
+.phraseband{background:var(--azul2);color:#fff}
+.phrase{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 0 30px;gap:6px}
+.phrase .heb{font-size:clamp(28px,4.5vw,40px);font-weight:900;letter-spacing:.6px}
+.phrase .trans{font-size:clamp(13px,1.8vw,16px);opacity:.96}
 
 /* ===== Secciones ===== */
 .section{padding:72px 0;background:var(--crema)}
@@ -70,17 +48,19 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sa
 .grid{display:grid;gap:22px}
 .thirds{grid-template-columns:repeat(3,1fr)}
 .quarters{grid-template-columns:repeat(4,1fr)}
+
 @media (max-width:980px){
+  .hero__grid{grid-template-columns:1fr}
   .thirds{grid-template-columns:repeat(2,1fr)}
   .quarters{grid-template-columns:repeat(2,1fr)}
 }
 
-/* Cards info */
+/* Cards */
 .card{background:#fff;border:1px solid var(--borde);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:.2s}
 .card:hover{transform:translateY(-4px)}
 .icon{font-size:28px;background:var(--azul3);color:var(--azul2);width:48px;height:48px;border-radius:12px;display:grid;place-items:center;margin-bottom:10px}
 
-/* Tarjetas identidad */
+/* Ondas + perfiles */
 .section--wave{position:relative;background:#fff;padding:88px 0}
 .wave{position:absolute;left:0;right:0;height:56px}
 .wave--top{top:-56px;background:radial-gradient(100% 100% at 50% 100%, #fff 40%, transparent 41%) top/100% 56px repeat-x}
@@ -112,7 +92,7 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sa
 .faq ul{margin:0; padding:0 20px 16px 36px}
 .faq li{margin:8px 0}
 
-/* ===== Footer ===== */
+/* Footer */
 .footer{background:var(--azul);color:#fff;padding:30px 0}
 .footer__grid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
 .foot-menu{display:flex;gap:14px;justify-content:center}
