@@ -1,72 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Adolescencia Judía</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hub | Adolescencia Judía</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <div class="hero__inner">
+      <h1>Adolescencia Judía</h1>
+      <p class="hero__sub">Equilibrio entre tradición y modernidad: ritos de paso, Shabat, alimentación kosher, retos actuales y referencias audiovisuales.</p>
+      <a class="btn btn--ghost" href="#hub">Explorar el Hub</a>
+    </div>
+  </header>
 
-<header>
-  <h1>Adolescencia Judía</h1>
-  <p>Tradición y modernidad en la vida de los jóvenes judíos</p>
-</header>
+  <nav class="nav">
+    <a class="nav__link" href="#hub">Inicio</a>
+    <a class="nav__link" href="#adolescencia">Adolescencia</a>
+    <a class="nav__link" href="#ritos">Ritos</a>
+    <a class="nav__link" href="#shabat">Shabat & Kosher</a>
+    <a class="nav__link" href="#retos">Retos</a>
+    <a class="nav__link" href="#peliculas">Películas</a>
+    <a class="nav__link" href="#colombia">Comparación</a>
+  </nav>
 
-<nav>
-  <a href="#adolescencia">Adolescencia</a>
-  <a href="#ritos">Ritos de Paso</a>
-  <a href="#shabat">Shabat & Kosher</a>
-  <a href="#retos">Retos</a>
-  <a href="#peliculas">Películas</a>
-  <a href="#colombia">Comparación</a>
-</nav>
+  <main class="wrap">
+    <section id="hub" class="hub grid">
+      <article class="card reveal"><h3>Adolescencia actual</h3><p>Identidad, familia y vida cotidiana hoy.</p><a class="btn" href="#adolescencia">Abrir</a></article>
+      <article class="card reveal"><h3>Ritos de paso</h3><p>Bar Mitzvá (13) y Bat Mitzvá (12).</p><a class="btn" href="#ritos">Abrir</a></article>
+      <article class="card reveal"><h3>Shabat & Kosher</h3><p>Paso a paso y claves de la dieta.</p><a class="btn" href="#shabat">Abrir</a></article>
+      <article class="card reveal"><h3>Retos actuales</h3><p>Identidad, redes y escuela.</p><a class="btn" href="#retos">Abrir</a></article>
+      <article class="card reveal"><h3>Películas/Series</h3><p>Representaciones recientes.</p><a class="btn" href="#peliculas">Abrir</a></article>
+      <article class="card reveal"><h3>Comparación (Colombia)</h3><p>Comentario final breve.</p><a class="btn" href="#colombia">Abrir</a></article>
+    </section>
 
-<main>
-  <section id="adolescencia">
-    <h2>Adolescencia Judía Actual</h2>
-    <p>Los adolescentes judíos combinan <b>tradiciones</b> como el Shabat, la alimentación kosher y los Bar/Bat Mitzvá con la <b>vida moderna</b>: redes sociales, deportes, música y estudios internacionales.</p>
-  </section>
+    <section id="peliculas" class="section reveal">
+      <h2>Películas y series</h2>
+      <ul>
+        <li><i>No estás invitado a mi Bat Mitzvá</i> (Netflix, 2023).</li>
+        <li><i>Shtisel</i> (serie israelí).</li>
+        <li><i>Unorthodox</i> (Netflix).</li>
+      </ul>
+      <div class="audio-block">
+        <h3>🎧 Audio resumen en 10 minutos</h3>
+        <audio controls src="media/no_estas_invitada_bat_mitzva_resumen_10min.mp3"></audio>
+      </div>
+    </section>
+  </main>
 
-  <section id="ritos">
-    <h2>Ritos de Paso</h2>
-    <p><b>Bar Mitzvá (13 años, niños):</b> lectura de la Torá, uso de kipá y talit, paso a la responsabilidad adulta. Hoy se celebra también con fiestas modernas.</p>
-    <p><b>Bat Mitzvá (12 años, niñas):</b> discurso o encendido de velas. Actualmente se celebran como eventos sociales con música, vestidos y estilo juvenil.</p>
-  </section>
+  <footer class="footer">Exposición – Psicología de la Adolescencia · © 2025</footer>
 
-  <section id="shabat">
-    <h2>Shabat y Alimentación Kosher</h2>
-    <p><b>Shabat:</b> viernes al anochecer hasta sábado. Se encienden velas, cena familiar especial, descanso sin tecnología y cierre con Havdalá.</p>
-    <p><b>Kosher:</b> normas de alimentación que permiten ciertos animales y pescados, prohíben cerdo y mariscos, y no mezclan carne con leche.</p>
-  </section>
-
-  <section id="retos">
-    <h2>Retos Modernos</h2>
-    <ul>
-      <li>Equilibrar tradición y vida digital (TikTok, videojuegos).</li>
-      <li>Combatir antisemitismo en redes sociales.</li>
-      <li>Presión académica y expectativas familiares.</li>
-      <li>Mantener identidad en contextos globales.</li>
-    </ul>
-  </section>
-
-  <section id="peliculas">
-    <h2>Películas y Series</h2>
-    <ul>
-      <li><i>No estás invitado a mi Bat Mitzvá</i> (Netflix, 2023)</li>
-      <li><i>Shtisel</i> (serie israelí)</li>
-      <li><i>Unorthodox</i> (Netflix)</li>
-    </ul>
-  </section>
-
-  <section id="colombia">
-    <h2>Comparación con Colombia</h2>
-    <p>En Colombia, los ritos de paso más comunes son los <b>quince años</b> y los <b>grados escolares</b>. Aunque no tienen raíz religiosa, cumplen una función similar: reconocer la transición a nuevas responsabilidades.</p>
-  </section>
-</main>
-
-<footer>
-  <p>Exposición – Psicología de la Adolescencia | © 2025</p>
-</footer>
-
+  <script src="app.js"></script>
 </body>
 </html>

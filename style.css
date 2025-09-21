@@ -1,74 +1,27 @@
-/* ----- Estilos generales ----- */
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f5f9ff;
-  color: #222;
-  line-height: 1.6;
+:root {
+  --azul: #004080;
+  --azul2: #0A66C2;
+  --blanco: #ffffff;
+  --gris: #f5f9ff;
+  --texto: #1f2a37;
+  --sombra: 0 6px 18px rgba(0,0,0,.08);
 }
-
-/* ----- Encabezado ----- */
-header {
-  background: linear-gradient(135deg, #004080, #0066cc);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-header h1 {
-  margin: 0;
-  font-size: 3em;
-}
-header p {
-  font-size: 1.2em;
-}
-
-/* ----- Navegación ----- */
-nav {
-  background: #004080;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 12px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-nav a:hover {
-  color: #ffdd00; /* toque dorado israelí */
-}
-
-/* ----- Secciones ----- */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-section h2 {
-  color: #004080;
-  border-bottom: 2px solid #0066cc;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-/* ----- Listas ----- */
-ul {
-  padding-left: 20px;
-}
-ul li {
-  margin-bottom: 8px;
-}
-
-/* ----- Footer ----- */
-footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
+body {margin:0;font-family:"Segoe UI",Arial,sans-serif;background:var(--gris);color:var(--texto);line-height:1.6;}
+.hero {padding:80px 20px;text-align:center;background:linear-gradient(135deg,var(--azul),var(--azul2));color:var(--blanco);}
+.hero__sub {max-width:720px;margin:10px auto 20px;opacity:.95;}
+.btn {background:var(--blanco);color:var(--azul);padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:bold;transition:.3s;}
+.btn:hover {background:var(--azul2);color:var(--blanco);}
+.btn--ghost {background:transparent;border:2px solid var(--blanco);color:var(--blanco);}
+.nav {background:var(--azul);display:flex;justify-content:center;flex-wrap:wrap;gap:15px;padding:10px;}
+.nav__link {color:var(--blanco);text-decoration:none;font-weight:600;}
+.nav__link:hover {text-decoration:underline;}
+.wrap {max-width:1000px;margin:40px auto;padding:0 16px;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.card {background:var(--blanco);padding:20px;border-radius:10px;box-shadow:var(--sombra);transition:transform .3s;}
+.card:hover {transform:translateY(-5px);}
+.card h3 {color:var(--azul);}
+.section {background:var(--blanco);padding:24px;border-radius:10px;box-shadow:var(--sombra);margin:30px 0;}
+.section h2 {color:var(--azul);border-bottom:2px solid var(--azul2);padding-bottom:6px;}
+.audio-block {margin-top:20px;}
+audio {width:100%;}
+.footer {background:var(--azul);color:var(--blanco);text-align:center;padding:20px;margin-top:40px;}
