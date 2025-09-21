@@ -1,0 +1,74 @@
+/* ----- Estilos generales ----- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f9ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ----- Encabezado ----- */
+header {
+  background: linear-gradient(135deg, #004080, #0066cc);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+header p {
+  font-size: 1.2em;
+}
+
+/* ----- Navegación ----- */
+nav {
+  background: #004080;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffdd00; /* toque dorado israelí */
+}
+
+/* ----- Secciones ----- */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+section h2 {
+  color: #004080;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* ----- Listas ----- */
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ----- Footer ----- */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
