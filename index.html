@@ -15,7 +15,7 @@
         <span class="brand__mark" aria-hidden="true">✡︎</span>
         <span class="brand__text">J-Teens</span>
       </div>
-      <nav class="menu">
+      <nav class="menu" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#galeria">Identidad & Vida</a>
@@ -24,7 +24,7 @@
     </div>
   </header>
 
-  <!-- HERO / BANNER -->
+  <!-- HERO -->
   <section id="inicio" class="hero">
     <div class="container hero__grid">
       <div class="hero__copy">
@@ -44,15 +44,15 @@
     </div>
   </section>
 
-  <!-- BANNER AZUL SOLO FRASE -->
-  <div class="stats">
-    <div class="container stats__solo">
+  <!-- BANNER AZUL SOLO FRASE (CENTRADO) -->
+  <section class="phraseband" aria-label="Frase hebrea">
+    <div class="container">
       <div class="phrase">
-        <span class="heb">תיקון עולם</span>
-        <small class="trans">Tikkun Olam — “reparar el mundo”</small>
+        <div class="heb" lang="he">תיקון עולם</div>
+        <div class="trans">Tikkun Olam — “reparar el mundo”</div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- CÓMO FUNCIONA -->
   <section id="como-funciona" class="section">
@@ -86,9 +86,7 @@
     <div class="wave wave--top" aria-hidden="true"></div>
     <div class="container">
       <h2 class="title">Identidad & Vida Cotidiana</h2>
-      <p class="section__intro">
-        Prácticas y símbolos que conviven con gustos y hábitos actuales.
-      </p>
+      <p class="section__intro">Prácticas y símbolos que conviven con gustos y hábitos actuales.</p>
 
       <div class="grid quarters">
         <article class="profile"><div class="profile__thumb thumb--a"></div><div class="profile__body"><h4>Kosher</h4><p>Carnes permitidas, pescados con escamas y <b>sin</b> mezclar carne con leche.</p></div></article>
@@ -100,13 +98,15 @@
     <div class="wave wave--bottom" aria-hidden="true"></div>
   </section>
 
-  <!-- FAQ AMPLIADO -->
-  <section id="faq" class="section">
+  <!-- PREGUNTAS FRECUENTES (ACCESIBLE) -->
+  <section id="faq" class="section" aria-labelledby="t-faq">
     <div class="container">
-      <h2 class="title">Preguntas frecuentes</h2>
-      <div class="faq">
-        <details open>
-          <summary>¿Qué incluye el Shabat en una familia adolescente?</summary>
+      <h2 id="t-faq" class="title">Preguntas frecuentes</h2>
+      <p class="section__intro">Pulsa o navega con el teclado para abrir cada respuesta.</p>
+
+      <div class="faq" role="list">
+        <details role="listitem">
+          <summary><span>¿Qué incluye el Shabat en una familia adolescente?</span></summary>
           <ul>
             <li><b>Inicio (viernes tarde):</b> encendido de velas y bendiciones.</li>
             <li><b>Cena:</b> jalá, vino/jugo de uva y platos preparados con anticipación.</li>
@@ -115,32 +115,31 @@
           </ul>
         </details>
 
-        <details>
-          <summary>¿Cómo se vive kosher en la adolescencia?</summary>
+        <details role="listitem">
+          <summary><span>¿Cómo se vive kosher en la adolescencia?</span></summary>
           <ul>
-            <li>Carnes permitidas (rumiantes con pezuña hendida) y aves como pollo/pavo.</li>
-            <li>Pescado con aletas y escamas; prohibidos cerdo y mariscos.</li>
+            <li>Carnes permitidas y aves como pollo/pavo; prohibidos cerdo y mariscos.</li>
+            <li>Pescado con aletas y escamas.</li>
             <li>No mezclar carne con leche (incluye utensilios separados).</li>
-            <li>Muchos jóvenes lo cumplen estrictamente en casa y se adaptan en salidas con amigos.</li>
+            <li>En salidas con amigos, se busca opciones aptas o vegetarianas.</li>
           </ul>
         </details>
 
-        <details>
-          <summary>¿Qué pasa hoy en Bar Mitzvá / Bat Mitzvá?</summary>
+        <details role="listitem">
+          <summary><span>¿Qué pasa hoy en Bar Mitzvá / Bat Mitzvá?</span></summary>
           <ul>
             <li><b>Preparación:</b> meses de estudio/lectura en hebreo.</li>
             <li><b>Ceremonia:</b> lectura o discurso ante la comunidad.</li>
             <li><b>Celebración:</b> evento moderno con DJ, fotos y participación de amistades.</li>
-            <li><b>Sentido:</b> transición simbólica a nuevas responsabilidades comunitarias.</li>
           </ul>
         </details>
 
-        <details>
-          <summary>¿Cómo equilibran tradición y vida moderna?</summary>
+        <details role="listitem">
+          <summary><span>¿Cómo equilibran tradición y vida moderna?</span></summary>
           <ul>
-            <li>Acuerdos familiares para “<b>Shabat digital</b>” (pausa de redes).</li>
-            <li>Espacios juveniles: campamentos, clubes y actividades deportivas/culturales.</li>
-            <li>Educación valorada: proyectos académicos y programas internacionales.</li>
+            <li>“<b>Shabat digital</b>”: acuerdos para pausar redes y pantallas.</li>
+            <li>Campamentos y clubes juveniles fortalecen pertenencia.</li>
+            <li>Alta valoración de la educación y programas internacionales.</li>
           </ul>
         </details>
       </div>
@@ -150,7 +149,7 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="foot-brand">✡︎ J-Teens</div>
-      <nav class="foot-menu">
+      <nav class="foot-menu" aria-label="Enlaces de pie de página">
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#galeria">Identidad</a>
