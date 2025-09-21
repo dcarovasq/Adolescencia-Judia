@@ -19,7 +19,6 @@
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#galeria">Identidad & Vida</a>
-        <a href="#faq">FAQ</a>
         <a href="#contacto" class="btn btn--sm">Contacto</a>
       </nav>
     </div>
@@ -38,32 +37,45 @@
         <a class="btn" href="#como-funciona">Empezar</a>
       </div>
 
-      <!-- Ilustración sin imágenes externas -->
+      <!-- Ilustración con Estrella de David mejorada -->
       <div class="hero__art" aria-hidden="true">
-        <svg viewBox="0 0 320 240" class="art">
+        <svg viewBox="0 0 360 260" class="art" role="img" aria-label="Estrella de David">
           <defs>
-            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+            <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
               <stop offset="0%" stop-color="#0A66C2"/>
               <stop offset="100%" stop-color="#004080"/>
             </linearGradient>
+            <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#002a66" flood-opacity="0.35"/>
+            </filter>
           </defs>
-          <rect x="0" y="0" width="320" height="240" rx="20" fill="url(#g1)"/>
-          <g fill="rgba(255,255,255,.9)">
-            <polygon points="160,35 190,85 130,85"/>
-            <polygon points="160,205 190,155 130,155"/>
-            <polygon points="115,60 205,60 160,140"/>
-            <polygon points="115,180 205,180 160,100"/>
+          <rect x="0" y="0" width="360" height="260" rx="26" fill="url(#bgGrad)" filter="url(#soft)"/>
+          <!-- estrella limpia y centrada -->
+          <g fill="#ffffff" opacity="0.95">
+            <!-- triángulo hacia arriba -->
+            <polygon points="180,40 230,125 130,125"/>
+            <!-- triángulo hacia abajo -->
+            <polygon points="180,220 230,135 130,135"/>
+          </g>
+          <!-- triángulos interiores para líneas de la estrella -->
+          <g fill="#ffffff" opacity="0.75">
+            <polygon points="180,72 205,115 155,115"/>
+            <polygon points="180,188 205,145 155,145"/>
           </g>
         </svg>
       </div>
     </div>
 
-    <!-- Tira de métricas -->
+    <!-- Tira de métricas / frase -->
     <div class="stats">
       <div class="container stats__grid">
         <div class="stat"><span>115+</span> Comunidades juveniles</div>
         <div class="stat"><span>58+</span> Programas educativos</div>
-        <div class="stat"><span>173+</span> Eventos al año</div>
+        <!-- Frase judía + traducción -->
+        <div class="stat phrase">
+          <span class="heb">תיקון עולם</span>
+          <small class="trans">Tikkun Olam — “reparar el mundo”</small>
+        </div>
       </div>
     </div>
 
@@ -117,19 +129,6 @@
     <div class="wave wave--bottom" aria-hidden="true"></div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="section">
-    <div class="container">
-      <h2 class="title">Preguntas frecuentes</h2>
-      <div class="faq">
-        <details><summary>¿Qué incluye el Shabat en una familia adolescente?</summary><p>Encendido de velas, cena, descanso de tareas/tecnología, sinagoga y cierre con <em>Havdalá</em>.</p></details>
-        <details><summary>¿Cómo se vive kosher en la adolescencia?</summary><p>Se respetan carnes y pescados permitidos; no se mezcla carne con leche; muchos lo cumplen estrictamente en casa.</p></details>
-        <details><summary>¿Qué pasa en Bar/Bat Mitzvá hoy?</summary><p>Ceremonia + celebración moderna (DJ, fotos, amigos) como rito de transición y pertenencia.</p></details>
-        <details><summary>¿Hay comparación con Colombia?</summary><p>En Colombia, <b>quinceaños</b> y <b>grados</b> marcan transiciones sociales; en la cultura judía, el foco es religioso-comunitario.</p></details>
-      </div>
-    </div>
-  </section>
-
   <!-- CONTACTO -->
   <section id="contacto" class="cta">
     <div class="container">
@@ -154,7 +153,6 @@
         <a href="#inicio">Inicio</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#galeria">Identidad</a>
-        <a href="#faq">FAQ</a>
       </nav>
       <small>© 2025 Exposición · Psicología de la Adolescencia</small>
     </div>
